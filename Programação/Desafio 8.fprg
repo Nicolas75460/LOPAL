@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 02:26:26 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjAxOjM3OjQzICI7MjI1Mg=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjAyOjI2OjI2ICI7MTsyMzYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="escolha" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ol&#225;, bem vindo, escolha um dos 5 n&#250;meros abaixo:&quot;" newline="True"/>
+            <output expression="&quot;1 - Burger normal&quot;" newline="True"/>
+            <output expression="&quot;2 - Burger bacon&quot;" newline="True"/>
+            <output expression="&quot;3 - Burger salad&quot;" newline="True"/>
+            <output expression="&quot;4 - Burger egg&quot;" newline="True"/>
+            <output expression="&quot;5 - Burger tudo&quot;" newline="True"/>
+            <input variable="escolha"/>
+            <if expression="escolha = 1">
+                <then>
+                    <output expression="&quot;O burger normal &#233;: R$11.50&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="escolha = 2">
+                        <then>
+                            <output expression="&quot;O burguer bacon &#233;: R$16.50&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="escolha = 3">
+                                <then>
+                                    <output expression="&quot;O burguer salad &#233;: R$12.50&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="escolha = 4">
+                                        <then>
+                                            <output expression="&quot;O burguer egg &#233;: R$14.00&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;O burguer tudo &#233;: R$20.00&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

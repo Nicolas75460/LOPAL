@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 09:38:06 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjA5OjM1OjA0ICI7MjI1NQ=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjA5OjM1OjEzICI7MTtBbHVubztMSU0wMy1OMDg7MjAyNC0wMi0wNjsiMDg6MTI6MjggIjs0Njc3"/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjA5OjM4OjA2ICI7MTsyMzY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, soma, sub, multi, div" type="Real" array="False" size=""/>
+            <output expression="&quot;Coloque o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Coloque o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="soma" expression="a + b"/>
+            <assign variable="sub" expression="a - b"/>
+            <assign variable="multi" expression="a * b"/>
+            <assign variable="div" expression="a / b"/>
+            <output expression="&quot;A soma dos dois n&#250;meros &#233;: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;A subtra&#231;&#227;o dos dois n&#250;meros &#233;: &quot; &amp; sub" newline="True"/>
+            <output expression="&quot;A multiplica&#231;&#227;o dos dois n&#250;meros &#233;: &quot; &amp; multi" newline="True"/>
+            <output expression="&quot;A divis&#227;o dos dois n&#250;meros &#233;: &quot; &amp; div" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
