@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 09:50:53 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjAxOjM3OjQzICI7MjI1Mg=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjA4OzIwMjQtMDItMDY7IjAyOjI2OjI2ICI7MTsyMzYw"/>
+        <attribute name="edited" value="bmljb2w7REVTS1RPUC1FSUFWMzlDOzIwMjQtMDItMDY7IjA5OjUwOjUzICI7MTsyODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="Pedido"/>
+        </body>
+    </function>
+    <function name="Pedido" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="escolha1, escolha2" type="Real" array="False" size=""/>
+            <declare name="conta" type="Real" array="False" size=""/>
+            <declare name="resposta1, resposta2, resposta3" type="String" array="False" size=""/>
+            <output expression="&quot;Ol&#225;, bem vindo, escolha um dos 5 n&#250;meros abaixo:&quot;" newline="True"/>
+            <output expression="&quot;1 - Burger normal&quot;" newline="True"/>
+            <output expression="&quot;2 - Burger bacon&quot;" newline="True"/>
+            <output expression="&quot;3 - Burger salad&quot;" newline="True"/>
+            <output expression="&quot;4 - Burger egg&quot;" newline="True"/>
+            <output expression="&quot;5 - Burger tudo&quot;" newline="True"/>
+            <input variable="escolha1"/>
+            <if expression="escolha1 = 1">
+                <then>
+                    <assign variable="escolha1" expression="11.50"/>
+                    <output expression="&quot;O burger normal &#233;: R$&quot; &amp; escolha1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="escolha1 = 2">
+                        <then>
+                            <assign variable="escolha1" expression="16.50"/>
+                            <output expression="&quot;O burguer bacon &#233;: R$&quot; &amp; escolha1" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="escolha1 = 3">
+                                <then>
+                                    <assign variable="escolha1" expression="12.50"/>
+                                    <output expression="&quot;O burguer salad &#233;: R$&quot; &amp; escolha1" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="escolha1 = 4">
+                                        <then>
+                                            <assign variable="escolha1" expression="14.00"/>
+                                            <output expression="&quot;O burguer egg &#233;: R$&quot; &amp; escolha1" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="escolha1" expression="20.00"/>
+                                            <output expression="&quot;O burguer tudo &#233;: R$&quot; &amp; escolha1" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Concluir o pedido? &quot;" newline="True"/>
+            <input variable="resposta1"/>
+            <if expression="resposta1 = &quot;Sim&quot;">
+                <then>
+                    <output expression="&quot;Ok&quot;" newline="True"/>
+                    <output expression="&quot;Deseja escolher outro? &quot;" newline="True"/>
+                    <input variable="resposta3"/>
+                    <if expression="resposta3 = &quot;Sim&quot;">
+                        <then>
+                            <call expression="Pedido2"/>
+                            <assign variable="conta" expression="escolha1 + escolha1"/>
+                            <output expression="&quot;Sua conta deu: &quot; &amp; conta" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ok, volte sempre!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Deseja escolher outro no lugar? &quot;" newline="True"/>
+                    <input variable="resposta2"/>
+                    <if expression="resposta2 = &quot;Sim&quot;">
+                        <then>
+                            <call expression="Pedido&#13;&#10;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Tudo bem, volte sempre!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Pedido2" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="escolha2" type="Real" array="False" size=""/>
+            <output expression="&quot;1 - Burger normal&quot;" newline="True"/>
+            <output expression="&quot;2 - Burger bacon&quot;" newline="True"/>
+            <output expression="&quot;3 - Burger salad&quot;" newline="True"/>
+            <output expression="&quot;4 - Burger egg&quot;" newline="True"/>
+            <output expression="&quot;5 - Burger tudo&quot;" newline="True"/>
+            <input variable="escolha2"/>
+            <if expression="escolha2 = 1">
+                <then>
+                    <assign variable="escolha2" expression="11.50"/>
+                    <output expression="&quot;O burger normal &#233;: R$&quot; &amp; escolha2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="escolha2 = 2">
+                        <then>
+                            <assign variable="escolha2" expression="16.50"/>
+                            <output expression="&quot;O burguer bacon &#233;: R$&quot; &amp; escolha2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="escolha2 = 3">
+                                <then>
+                                    <assign variable="escolha2" expression="12.50"/>
+                                    <output expression="&quot;O burguer salad &#233;: R$&quot; &amp; escolha2" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="escolha2 = 4">
+                                        <then>
+                                            <assign variable="escolha2" expression="14.00"/>
+                                            <output expression="&quot;O burguer egg &#233;: R$&quot; &amp; escolha2" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="escolha2" expression="20.00"/>
+                                            <output expression="&quot;O burguer tudo &#233;: R$&quot; &amp; escolha2" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
