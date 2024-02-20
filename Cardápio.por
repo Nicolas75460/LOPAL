@@ -3,11 +3,14 @@ programa {
     inteiro pedido, escolha1, escolha2
     real preco, batata, total
 
+    // Apresentação da loja
     escreva("Top Lanches\n\n")
     escreva("Olá, seja bem vindo a Top Lanches!\n")
     escreva("Aberto de segunda à segunda das 18:00 às 00:00hs\n")
     escreva("Instagram: @toplanchespaineiras / Número de whatsapp: 9.9656-7272\n\n")
 
+
+    // Cardápio da loja e escolha do pedido
     escreva("Aqui está o nosso cardápio:\n")
     escreva("1 - Hot-Dog (3 Salsicha)\n")
     escreva("2 - Hot-Dog (3 Queijo)\n")
@@ -22,8 +25,11 @@ programa {
     escreva("Escolha um número do cardápio: ")
     leia(pedido)
 
+
     limpa()
     
+
+    // Casos do pedido
     escolha(pedido)
     {
       caso 1:
@@ -90,6 +96,8 @@ programa {
         escreva("Este pedido não tem no cardápio!")
     }
 
+
+    // Escolha de aceitar ou náo a promoção
     batata = 7.00
     escreva("\n\nA nossas batatas com: Batata frita + cheddar + bacon + calabresa. \nPor apenas R$", batata)
     escreva("\nDeseja pedir as nossas batatas? ")
@@ -97,8 +105,11 @@ programa {
     escreva("\nEscolha a sua resposta: ")
     leia(escolha1)
 
+
     limpa()
 
+
+    // Casos da escolha da promoção
     escolha(escolha1)
     {
       caso 1:
@@ -112,6 +123,8 @@ programa {
         escreva("Opção inválida")
     }
 
+
+    // Escolha da forma de pagamento
     escreva("\n\nQual será sua forma de pagamento?\n")
     escreva("1 - Dinheiro físico\n")
     escreva("2 - Débito\n")
@@ -120,27 +133,31 @@ programa {
     escreva("Escolha sua opção: ")
     leia(escolha2)
 
+
     limpa()
 
+
+    // Casos da forma de pagamento
     escolha(escolha2)
     {
       caso 1:
         escreva("Então me entregue o dinheiro físico")
+        escreva("\nTudo feito! Estamos preparando seu pedido. Obrigado pela preferência!\n\n")
         pare
       caso 2:
         escreva("Insira ou aproxime o cartão de débito")
+        escreva("\nTudo feito! Estamos preparando seu pedido. Obrigado pela preferência!\n\n")
         pare
       caso 3:
         escreva("Insira ou aproxime o cartão de crédito")
+        escreva("\nTudo feito! Estamos preparando seu pedido. Obrigado pela preferência!\n\n")
         pare
       caso 4: 
         escreva("Leia este QRCode")
+        escreva("\nTudo feito! Estamos preparando seu pedido. Obrigado pela preferência!\n\n")
         pare
       caso contrario:
         escreva("Está forma não aceitamos")
     }
-
-    escreva("\nTudo feito! Estamos preparando seu pedido. Obrigado pela preferência!\n\n")
-
   }
 }
