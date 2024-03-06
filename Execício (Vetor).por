@@ -1,5 +1,7 @@
-programa {
-  funcao inicio() {
+programa
+{
+	funcao inicio ()
+	{
     inteiro maior = 0
     inteiro numero, i, n[8] // O número 8 representa o número de elementos e não número do último índice 
     
@@ -13,7 +15,12 @@ programa {
         maior = n[i]
       }
     }
-    escreva("O maior valor é: ", maior)
+    para (i = 0; i < 8; i++){
+      se(n[i] == maior){
+        n[i] = n[maior]
+      }
+    }
+    escreva("O maior valor é: ", maior, ", na posição ", n[i])
     
   }
 }
