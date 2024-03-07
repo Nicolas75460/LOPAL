@@ -3,10 +3,10 @@ programa
 	funcao inicio ()
 	{
     inteiro maior = 0, posicao
-    inteiro numero, i, n[8] // O número 8 representa o número de elementos e não número do último índice 
+    inteiro numero, i, n[8] // O nÃºmero 8 representa o nÃºmero de elementos e nÃ£o nÃºmero do Ãºltimo Ã­ndice 
     
     para(i = 0; i < 8; i++){
-      escreva("Qual o valor do índice: ", i, "?\n")
+      escreva("Qual o valor do Ã­ndice: ", i, "?\n")
       leia(numero)
       n[i] = numero
     }
@@ -20,7 +20,7 @@ programa
         posicao = i
       }
     }
-    escreva("O maior valor é: ", maior, ", na posição ", i)
+    escreva("O maior valor Ã©: ", maior, ", na posiÃ§Ã£o ", posicao)
     
   }
 }
