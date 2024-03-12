@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
-    inteiro i, n[8]
-    inteiro numero, soma 
+    real i, n[8]
+    real numero, soma 
 
     para(i = 0; i < 8; i++){
       escreva("Qual o valor do índice: ", i, "?\n")
