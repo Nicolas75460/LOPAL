@@ -4,18 +4,19 @@ programa {
     inteiro numero, soma 
 
     para(i = 0; i < 8; i++){
-      escreva("Qual o valor do índice: ", i, "?\n")
+      escreva("Qual o valor do Ã­ndice: ", i, "?\n")
       leia(numero)
       n[i] = numero
     }
 
     limpa()
 
-    para(i = 0; i < 8; i++){
-      soma = n[i] + i
-        escreva("A soma desses números é: ", soma, ".\n")
+    soma = n[0] 
+
+    para(i = 1; i < 10; i++){
+      soma = soma + n[i] 
     }
     
-    escreva("A soma dos seus números é: ", soma)
+    escreva("A soma dos seus nÃºmeros Ã©: ", soma)
   }
 }
