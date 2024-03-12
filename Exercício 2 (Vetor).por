@@ -5,8 +5,7 @@ programa {
 
     para(i = 0; i < 10; i++){
       escreva("Qual o valor do índice: ", i, "?\n")
-      leia(numero)
-      n[i] = numero
+      leia(n[i])
     }
 
     limpa()
