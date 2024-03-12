@@ -1,9 +1,9 @@
 programa {
   funcao inicio() {
-    real i, n[8]
-    real numero, soma 
+    inteiro i, n[10]
+    inteiro numero, soma 
 
-    para(i = 0; i < 8; i++){
+    para(i = 0; i < 10; i++){
       escreva("Qual o valor do índice: ", i, "?\n")
       leia(numero)
       n[i] = numero
