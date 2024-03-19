@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    inteiro i, u, n[5], in[5]
+    inteiro i, t, n[5], in[5]
     inteiro soma 
 
     para(i = 0; i < 5; i++){
@@ -8,14 +8,16 @@ programa {
       leia(n[i])
     }
 
+    limpa()
+
+    t = 4
+
+    para(i = 0; i < 5; i++){
+      in[i] = n[t - i]
+    }
+
+    escreva("Os seus números na ordem original é: ", n)
       
-      
-    escreva("Os números invertidos são: ", in)
+    escreva("\nOs seus números invertidos são: ", in)
   }
 }
-
-      /*in[0] = n[4]
-      in[1] = n[3]
-      in[2] = n[2]
-      in[3] = n[1]
-      in[4] = n[0]
