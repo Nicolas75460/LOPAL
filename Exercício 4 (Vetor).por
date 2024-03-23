@@ -3,9 +3,11 @@ programa {
     inteiro n[5], valor = 1, divisores = 0
 
     para(inteiro i = 0; i < 5; i++){
-      escreva("Digite o número do índice ", i, ": ")
+      escreva("Digite o nÃºmero do Ã­ndice ", i, ": ")
       leia(n[i])
     }
+
+    limpa()
 
     para(inteiro i = 0; i < 5; i++){
 
@@ -20,15 +22,15 @@ programa {
           valor++
         }
         se(divisores == 2){
-        escreva("O número ", n[i], " é primo.\n")
+          escreva("O nÃºmero ", n[i], " Ã© primo.\n")
         }
         senao{
-          escreva("O número ", n[i], " não é primo.\n")
+          escreva("O nÃºmero ", n[i], " nÃ£o Ã© primo.\n")
         }
       }
 
       senao{
-        escreva("O valor é negativo ou igual a zero.")
+        escreva("O valor Ã© negativo ou igual a zero.\n")
       }
     }
   }
