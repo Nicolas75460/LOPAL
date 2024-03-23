@@ -1,5 +1,4 @@
-programa
-{
+programa {
   funcao inicio ()
   {
     inteiro maior = 0, posicao
