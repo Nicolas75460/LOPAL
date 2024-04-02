@@ -2,15 +2,13 @@ programa {
   funcao inicio() {
     inteiro numA, numB
 
-    escreva("Digite o primeiro número: ")
+    escreva("Digite o primeiro nÃºmero: ")
     leia(numA)
-    escreva("Digite o segundo número: ")
+    escreva("Digite o segundo nÃºmero: ")
     leia(numB)
 
     limpa()
 
-    escreva("A ordem inversa desses números é: \n", numB, "\n", numA)
-
-
+    escreva("A ordem inversa desses nÃºmeros Ã©: \n", numB, "\n", numA)
   }
 }
