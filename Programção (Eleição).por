@@ -1,8 +1,7 @@
-
-/*  Descrição:
+/*  DescriÃ§Ã£o:
  * 
- * 	Este exemplo ilustra o uso do laço "faca-enquanto", simulando uma eleição entre 
- * 	dois candidatos. O exemplo ilustra também o uso do comando "escolha" para contabilizar
+ * 	Este exemplo ilustra o uso do laÃ§o "faca-enquanto", simulando uma eleiÃ§Ã£o entre 
+ * 	dois candidatos. O exemplo ilustra tambÃ©m o uso do comando "escolha" para contabilizar
  * 	os votos de cada candidato.
  * 	
  *  Autor: Leandro Gaudio Rosa
@@ -29,7 +28,7 @@ programa
     
     inteiro recomecar
 		
-    escreva("Olá, primeiro defina quantos candidatos serão. ")
+    escreva("OlÃ¡, primeiro defina quantos candidatos serÃ£o. ")
     escreva("\nQuantidade de candidatos: ")
     leia(quantidade_candidato)
 
@@ -39,7 +38,7 @@ programa
       inicio()
     }
 
-    escreva("Agora defina quais serão os candidatos\n\n")
+    escreva("Agora defina quais serÃ£o os candidatos\n\n")
     escreva("Primeiro candidato: ")
     leia(nome_candidato_1)
     escreva("Segundo candidato: ")
@@ -54,7 +53,7 @@ programa
 			escreva("\n  2 -> ", nome_candidato_2)
 			escreva("\n  3 -> Branco")
 			
-			escreva("\nQualquer número diferente de 0, 1, 2 e 3 anulará o seu voto\n")
+			escreva("\nQualquer nÃºmero diferente de 0, 1, 2 e 3 anularÃ¡ o seu voto\n")
 			escreva("Digite seu voto: ")
 			
 			leia(voto)
@@ -63,7 +62,7 @@ programa
 			escolha (voto)
 			{
 				caso 0:
-					escreva ("Votação encerrada!\n")
+					escreva ("VotaÃ§Ã£o encerrada!\n")
 				pare
 				
 				caso 1: 
@@ -79,7 +78,7 @@ programa
 			 	pare
 			 	
 			 	caso contrario:
-			 		nulos = nulos + 1 // Opção inválida. Soma um voto nulo
+			 		nulos = nulos + 1 // OpÃ§Ã£o invÃ¡lida. Soma um voto nulo
 			}			 
 		}
 		enquanto(voto != 0)
@@ -104,9 +103,9 @@ programa
 			escreva("Brancos: ", brancos, " voto(s). ", porcentagem_brancos, " % do total\n")
 			escreva("Nulos: ", nulos, " voto(s). ", porcentagem_nulos, " % do total\n")
 		}
-    escreva("\nDeseja fazer uma nova eleição?")
+    escreva("\nDeseja fazer uma nova eleiÃ§Ã£o?")
     escreva("\n 1 -> Sim")
-    escreva("\n 2 -> Não")
+    escreva("\n 2 -> NÃ£o")
     escreva("\nQual a sua escolha: ")
     leia(recomecar)
     
