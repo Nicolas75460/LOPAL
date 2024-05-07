@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class EX03 {
     public static void main(String[] args) {
         Scanner scamNota = new Scanner(System.in);
         
