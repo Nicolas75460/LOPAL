@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.io.IOException;
 
 
-public class Main {
+public class EX01 {
     public static void main(String[] args) {
   	    Scanner scamAge = new Scanner(System.in);
     
